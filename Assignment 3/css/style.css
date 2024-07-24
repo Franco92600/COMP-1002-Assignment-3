@@ -1,0 +1,483 @@
+/*textless poster used as background image*/
+body{
+    background-image:url("../img/TDK poster textless.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+/*page template setup*/
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: auto;
+    grid-template-areas:
+                "header header header header"
+                "main main main main"
+                "footer footer footer footer";
+
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+/*header setup*/
+header{
+    grid-area: header;
+    display: grid;
+    align-items: center;
+    height: 240px;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    color:#335773;
+}
+/*main setup */
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 70% 10% 5% 15%;
+    grid-template-areas:
+                "empty"
+                "Main-Credits"
+                "Director"
+                "TDK-Logo";
+    align-items: center;
+    text-align: center;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+/*Main credits for starring actors in white bold text*/
+#Main-Credits {
+    text-align: center;
+    padding-top: 1300px;
+    display: grid;
+    grid-template-columns: 10.28% 10.28% 14.28% 14.28% 14.28% 18.28% 18.28% ;
+    grid-template-areas: "Actor1 Actor2 Actor3 Actor4 Actor5 Actor6 Actor7 ";
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 0;
+}
+/*split first and last names up for seperate styling*/
+.Main1{
+    font-size: 22px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.Main2{
+    font-size: 44px;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+/* last credit had "and" before it so i had to add a grid*/
+#Actor7{
+    display: grid;
+    grid-template-areas:
+                        "top"
+                        "bottom";
+}
+#alt, #Morgan{
+    display: grid;
+    grid-area: top;
+}
+#Freeman{
+    display: grid;
+    grid-area: bottom;
+}
+/*styling for said "and"*/
+#alt{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 50px;
+    margin-top:  22px;
+}
+/*main director credit*/
+#Director{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "film" "nolan";
+    padding: 0;
+}
+/* because of different text styling I had to split up into 2 elements*/
+#film {
+    display: grid;
+    text-align: right;
+    margin-top: 0;
+    padding-top: 10px;
+}
+#nolan {
+    display: grid;
+    text-align: left;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#TDK-Logo img{
+    align-self:  center;
+    padding: 0;
+    margin: 0;
+    width:1200px;
+    height: auto;
+
+}
+
+/*Footer styling starts*/
+/*I'm sure there was a better more efficient method I could have used to accomplish this but I couldn't conceptualize
+how I would achieve this styling using grid and float so reluctantly i used absolute position to manually placed every
+element individually.*/
+#warner{
+    position: absolute;
+    top: 1910px;
+    left: 640px;
+}
+#presents{
+    position: absolute;
+    top: 1950px;
+    left: 820px;
+}
+#aa{
+    position: absolute;
+    top: 1991px;
+    left: 0px;
+}
+#ab{
+    position: absolute;
+    top: 1950px;
+    left: 74px;
+}
+#ac{
+    position: absolute;
+    top: 1991px;
+    left: 225px;
+}
+#ad{
+    position: absolute;
+    top: 1950px;
+    left: 235px;
+}
+#ae{
+    position: absolute;
+    top: 1991px;
+    left: 300px;
+}
+#af{
+    position: absolute;
+    top: 1950px;
+    left: 380px;
+}
+#ag{
+    position: absolute;
+    top: 1991px;
+    left: 1345px;
+}
+#ah{
+    position: absolute;
+    top: 1950px;
+    right: 30px;
+}
+
+#ba{
+    position: absolute;
+    top: 2015px;
+    left:5px;
+}
+#baa{
+    position: absolute;
+    top: 2030px;
+    left: 15px;
+}
+#bb{
+    position: absolute;
+    top: 1985px;
+    left: 25px;
+}
+#bc{
+    position: absolute;
+    top: 2015px;
+    left: 300px;
+}
+#bcc{
+    position: absolute;
+    top: 2030px;
+    left: 300px;
+}
+#bd{
+    position: absolute;
+    top: 1985px;
+    left: 325px;
+}
+#be{
+    position: absolute;
+    top: 2030px;
+    left: 440px;
+}
+#bf{
+    position: absolute;
+    top: 1985px;
+    left: 460px;
+}
+#bg{
+    position: absolute;
+    top: 2025px;
+    left: 535px;
+}
+#bh{
+    position: absolute;
+    top: 2015px;
+    left: 555px;
+}
+#bhh{
+    position: absolute;
+    top: 2030px;
+    left: 555px;
+}
+#bi{
+    position: absolute;
+    top: 1985px;
+    left: 590px;
+}
+#bj{
+    position: absolute;
+    top: 2015px;
+    left: 715px;
+}
+#bjj{
+    position: absolute;
+    top: 2030px;
+    left: 715px;
+}
+#bk{
+    position: absolute;
+    top: 1985px;
+    left: 755px;
+}
+#bl{
+    position: absolute;
+    top: 2025px;
+    left: 865px;
+}
+#bm{
+    position: absolute;
+    top: 2015px;
+    left: 890px;
+}
+#bmm{
+    position: absolute;
+    top: 2030px;
+    left: 890px;
+}
+#bn{
+    position: absolute;
+    top: 1985px;
+    left: 925px;
+}
+#ca{
+    position: absolute;
+    top: 2050px;
+    left: 15px;
+}
+#cb{
+    position: absolute;
+    top: 2065px;
+    left: 5px;
+}
+#cc{
+    position: absolute;
+    top: 2020px;
+    left: 70px;
+}
+#cd{
+    position: absolute;
+    top: 2050px;
+    left: 150px;
+}
+#ce{
+    position: absolute;
+    top: 2065px;
+    left: 180px;
+}
+#cf{
+    position: absolute;
+    top: 2020px;
+    left: 195px;
+}
+#cg{
+    position: absolute;
+    top: 2050px;
+    left: 280px;
+}
+#ch{
+    position: absolute;
+    top: 2065px;
+    left: 290px;
+}
+#ci{
+    position: absolute;
+    top: 2020px;
+    left: 310px;
+}
+#cj{
+    position: absolute;
+    top: 2060px;
+    left: 455px;
+}
+#ck{
+    position: absolute;
+    top: 2020px;
+    left: 465px;
+}
+#cl{
+    position: absolute;
+    top: 2050px;
+    left: 570px;
+}
+#cm{
+    position: absolute;
+    top: 2065px;
+    left: 595px;
+}
+#cn{
+    position: absolute;
+    top: 2020px;
+    left: 605px;
+}
+#co{
+    position: absolute;
+    top: 2060px;
+    left: 730px;
+}
+#cp{
+    position: absolute;
+    top: 2020px;
+    left: 745px;
+}
+#cq{
+    position: absolute;
+    top: 2050px;
+    left: 890px;
+}
+#cr{
+    position: absolute;
+    top: 2065px;
+    left: 910px;
+}
+#cs{
+    position: absolute;
+    top: 2020px;
+    left: 920px;
+}
+#ct{
+    position: absolute;
+    top: 2050px;
+    left: 1280px;
+}
+#cu{
+    position: absolute;
+    top: 2065px;
+    left: 1295px;
+}
+#cv{
+    position: absolute;
+    top: 2020px;
+    left: 1305px;
+}
+
+#legendary{
+    width: 125px;
+    height: auto;
+    position: absolute;
+    top: 2085px;
+}
+#dc{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 2100px;
+    left: 140px;
+}
+#syncopy{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 2075px;
+    left: 200px;
+}
+#sound{
+    position: absolute;
+    top: 2100px;
+    left: 310px;
+}
+#date{
+    position: absolute;
+    top: 2050px;
+    left: 680px;
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+#website{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: 2085px;
+    left: 900px;
+    color: #7c879c;
+}
+#copyright{
+    position: absolute;
+    top: 2120px;
+    left: 960px;
+    color: #7c879c;
+    font-size: 8px;
+}
+#bros{
+    position: absolute;
+    top: 2100px;
+    right: 0;
+    width: 100px;
+    height: auto;
+}
+#brostext{
+    position: absolute;
+    top: 2120px;
+    right: 80px;
+    font-size: 12px;
+    color: #7c879c;
+}
+/*everything else is text styling*/
+.sml, #sound{
+    font-size: 14px;
+}
+.med{
+    font-size: 18px;
+}
+.lrg{
+    font-size: 38px;
+}
+
+p{
+    color: #f8f8f8;
+}
+.lrg, .med, .sml, #sound{
+    font-family:"Six Caps", sans-serif;
+    color: #7c879c;
+
+}
+
+.Main1, #copyright {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+.Main2, #website{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
